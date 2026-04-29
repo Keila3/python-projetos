@@ -18,8 +18,17 @@ while True:
              print(f"Você quase acertou.. Uma dica: o número secreto é menor que {num_jogador}")
              tentativas = tentativas + 1
         
+    tentativas = tentativas + 1
+    print(f"Parabéns, o número secretro era: {num_aleatorio}, você finalizou o jogo em {tentativas} tentativas")
+    print("Gostaria de jogar novamente? ")
+    nova_partida = input("Digite S para contnuar ou N para sair do jogo: ").upper()
 
-
-    print("Você terminou a partida, gostaria de jogar novamente? ")
-    Nova_partida = input("Digite S para contnuar ou N para sair do jogo: ")
+    if nova_partida == "S":
+        print("Começando uma partida...")
+        
+    
+    elif nova_partida == "N":
+        print("Saindo do jogo...")
+        break
+    
 
