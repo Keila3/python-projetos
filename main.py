@@ -19,14 +19,17 @@ while True:
              tentativas = tentativas + 1
         
     tentativas = tentativas + 1
-    print(f"Parabéns, o número secretro era: {num_aleatorio}, você finalizou o jogo em {tentativas} tentativas")
+    print(f"Parabéns, o número secreto era: {num_aleatorio}, você finalizou o jogo em {tentativas} tentativas")
     print("Gostaria de jogar novamente? ")
     nova_partida = input("Digite S para contnuar ou N para sair do jogo: ").upper()
+    
+    while nova_partida != "S" and nova_partida != "N":
+        nova_partida = input(("Digite uma opção valida: ")).upper()
 
     if nova_partida == "S":
         print("Começando uma partida...")
+            
         
-    
     elif nova_partida == "N":
         print("Saindo do jogo...")
         break
